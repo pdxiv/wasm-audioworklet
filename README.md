@@ -1,6 +1,6 @@
 # WebAssembly Audio Generator with AudioWorklet
 
-This is a test to see 
+This is a test to see if it is possible to use WASM to efficiently generate audio in a web browser.
 
 ## Buildning the WASM
 
