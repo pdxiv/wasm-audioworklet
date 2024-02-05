@@ -11,8 +11,8 @@
 
   (func $main
 
-    (i32.const 1234) ;; number to convert
     (i32.const 8) ;; string buffer start address
+    (i32.const 1234) ;; number to convert
     (call $i32_to_string)
 
     ;; Add a newline to the data buffer after adding number to it
@@ -35,7 +35,7 @@
   )
 
   ;; Put string representation of unsigned 32 bit integer into memory address
-  (func $i32_to_string (param $number i32) (param $memAddr i32) (result i32)
+  (func $i32_to_string (param $memAddr i32) (param $number i32) (result i32)
     (local $digit i32)
     (local $startAddr i32)
     (local $tempAddr i32)
